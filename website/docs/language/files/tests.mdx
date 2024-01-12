@@ -1,0 +1,21 @@
+---
+page_title: Test Files - Configuration Language
+description: >-
+  Learn how to write test files for validating your configuration and modules.
+---
+
+# Test Files
+
+Specific OpenRecipe commands, such as `test`, `init`, and `validate`, load OpenRecipe test files for your configuration.
+
+Test files contain specifications for OpenRecipe test executions. For more information about the OpenRecipe `test` command, refer to [Command: `test`](/terraform/cli/commands/test). For more information about the syntax and OpenRecipe test file language, refer to [Tests](/terraform/language/tests).
+
+## File Extension
+
+OpenRecipe test files use the file extensions `.tftest.hcl` and `.tftest.json`.
+
+## Test File Locations
+
+OpenRecipe loads all test files within your root configuration directory.
+
+OpenRecipe also loads the test files within the testing directory. You can override the location of the testing directory by appending the `-test-directory` flag to commands that load test files. The default testing directory is `tests` relative to your configuration directory.

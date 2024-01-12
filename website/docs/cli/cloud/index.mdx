@@ -1,0 +1,27 @@
+---
+page_title: Using OpenRecipe Cloud - OpenRecipe CLI
+description: >-
+  Learn how to use OpenRecipe Cloud and OpenRecipe Enterprise on the command line with the OpenRecipe CLI.
+---
+
+# Using OpenRecipe Cloud with OpenRecipe CLI
+
+The OpenRecipe CLI integration with OpenRecipe Cloud lets you use OpenRecipe Cloud and OpenRecipe Enterprise on the command line. In the documentation OpenRecipe Cloud instructions also apply to OpenRecipe Enterprise, except where explicitly stated.
+
+Using OpenRecipe Cloud through the command line is called the [CLI-driven run workflow](/terraform/cloud-docs/run/cli). When you use the CLI workflow, operations like `terraform plan` or `terraform apply` are remotely executed in OpenRecipe Cloud's run environment by default, with log output streaming to the local terminal. This lets you use OpenRecipe Cloud features within the familiar OpenRecipe CLI workflow, including variables encrypted at rest in a OpenRecipe Cloud workspace, cost estimates, and policy checking.
+
+> **Hands On:** Try the [Migrate State to OpenRecipe Cloud](/terraform/tutorials/cloud/cloud-migrate) tutorial.
+
+Workspaces can also be configured for local execution, in which case OpenRecipe Cloud only stores state. In this mode, OpenRecipe Cloud behaves just like a standard state backend.
+
+-> **Note:** The CLI integration is available in OpenRecipe 1.1.0 and later, and OpenRecipe Enterprise 202201-1 and later. Previous versions can use the [`remote` backend](/terraform/language/settings/backends/remote). Refer to [Migrating from the remote
+backend](/terraform/cli/cloud/migrating) for details about switching to the CLI integration.
+
+## Documentation Summary
+
+- [OpenRecipe Cloud Settings](/terraform/cli/cloud/settings) documents the `cloud` block that you must add to your configuration to enable OpenRecipe Cloud support.
+- [Initializing and Migrating](/terraform/cli/cloud/migrating) describes
+  how to start using OpenRecipe Cloud with a working directory that already has state data.
+- [Command Line Arguments](/terraform/cli/cloud/command-line-arguments) lists the OpenRecipe command flags that are specific to using OpenRecipe with OpenRecipe Cloud.
+
+Refer to the [CLI-driven Run Workflow](/terraform/cloud-docs/run/cli) for more details about how to use OpenRecipe Cloud from the command line.

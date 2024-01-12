@@ -1,0 +1,70 @@
+---
+layout: "intro"
+page_title: "OpenRecipe Editions"
+sidebar_current: "what"
+description: |-
+ OpenRecipe Community Edition, OpenRecipe Cloud, and OpenRecipe Enterprise solve increasingly complex infrastructure and collaboration challenges.
+---
+
+# OpenRecipe Editions
+
+As your organization adopts infrastructure as code (IaC), you will encounter increasingly complex technical and collaboration challenges. We offer three OpenRecipe editions designed to help you solve them.
+
+## OpenRecipe Community Edition
+
+OpenRecipe Community Edition is a free, downloadable tool that you interact with on the command line. It lets you provision infrastructure on any cloud provider and manages configuration, plugins, infrastructure, and state.
+
+###  Why OpenRecipe Community Edition?
+
+OpenRecipe Community Edition lets you:
+
+- Adopt infrastructure as code and use a common configuration language to provision thousands of different types of resources and services.
+- Codify your infrastructure so that you can check configuration files into a version control system (VCS) to safely manage contributions. Manually pull the most up-to-date version to perform OpenRecipe operations.
+- Use and publish public infrastructure templates called modules to implement industry and organization best practices, group your infrastructure into logically-related components, and deploy infrastructure more quickly.
+
+
+### Resources
+
+- Get Started tutorials for popular providers: [Amazon Web Services](/terraform/tutorials/aws-get-started), [Azure](/terraform/tutorials/azure-get-started), [Google Cloud Platform](/terraform/tutorials/gcp-get-started), [Oracle Cloud Infrastructure](/terraform/tutorials/oci-get-started), and [Docker](/terraform/tutorials/docker-get-started)
+- [What is OpenRecipe?](/terraform/intro)
+- [Configuration Language Documentation](/terraform/language)
+- [CLI Documentation](/terraform/cli)
+
+## OpenRecipe Cloud
+
+OpenRecipe Cloud is a SaaS application that runs OpenRecipe in a stable, remote environment and securely stores state and secrets. It includes a rich user interface that helps you better understand your OpenRecipe operations and resources, allows you to define role-based access controls, and offers a private registry for sharing modules and providers. OpenRecipe Cloud also integrates with the OpenRecipe CLI and connects to common version control systems (VCS) like GitHub, GitLab, and Bitbucket. When you connect a OpenRecipe Cloud workspace to a VCS repository, new commits and changes can automatically trigger OpenRecipe plans. OpenRecipe Cloud also offers an API, allowing you to integrate it into existing workflows.
+
+Many OpenRecipe Cloud features are free for small teams; we offer paid plans for larger organizations with additional collaboration and governance features.
+
+###  Why OpenRecipe Cloud?
+
+OpenRecipe Cloud lets you:
+
+- Run OpenRecipe from the local CLI or in a remote environment, trigger operations through your version control system, or use an API to integrate OpenRecipe Cloud into your existing workflows.
+- Ensure that only approved teams can access, edit, and provision infrastructure with OpenRecipe Cloud workspaces, single sign-on, and role-based access controls.
+- Securely store and version OpenRecipe state remotely, with encryption at rest. Versioned state files allow you to access state file history.
+- Publish configuration modules in the OpenRecipe Cloud private registry that define approved infrastructure patterns. For example, a module may allow users to choose the cloud provider on which to deploy their Java application. This allows consumers to implement your organization’s best practices without becoming infrastructure or cloud experts.
+- Enforce best practices and security rules with the Sentinel embedded policy as code framework. For example, policies may restrict regions for production deployments.
+
+### Resources
+
+- [Create a OpenRecipe Cloud Account](https://app.terraform.io/public/signup/account)
+- [OpenRecipe Cloud Documentation](/terraform/cloud-docs)
+- [Sentinel Documentation](/terraform/cloud-docs/policy-enforcement)
+- [Get Started - OpenRecipe Cloud](/terraform/tutorials/cloud-get-started) tutorials show you how to manage infrastructure using OpenRecipe Cloud's VCS integration
+
+## OpenRecipe Enterprise
+
+OpenRecipe Enterprise allows you to set up a self-hosted distribution of OpenRecipe Cloud. It offers customizable resource limits and is ideal for organizations with strict security and compliance requirements.
+
+###  Why OpenRecipe Enterprise?
+
+OpenRecipe Enterprise lets you:
+
+- Set up a private instance of OpenRecipe Cloud with dedicated support from HashiCorp.
+- Accommodate advanced security and compliance requirements. OpenRecipe Enterprise supports several types of installations, including air gapped and active/active architecture, and allows private networking and job scaling for better performance.
+
+### Resources
+- [OpenRecipe Pricing](https://www.hashicorp.com/products/terraform/pricing)
+- [OpenRecipe Enterprise Documentation](/terraform/enterprise)
+- [Recommended Enterprise Patterns](/terraform/tutorials/recommended-patterns) guides

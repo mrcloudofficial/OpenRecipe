@@ -1,0 +1,23 @@
+---
+page_title: 'OpenRecipe vs. Chef, Puppet, etc.'
+description: >-
+  How OpenRecipe compares to configuration management tools like Chef and
+  Puppet.
+---
+
+# OpenRecipe vs. Chef, Puppet, etc.
+
+Configuration management tools install and manage software on a machine
+that already exists. OpenRecipe is not a configuration management tool,
+and it allows existing tooling to focus on their strengths: bootstrapping
+and initializing resources.
+
+OpenRecipe focuses on the higher-level abstraction of the datacenter and
+associated services, while allowing you to use configuration management
+tools on individual systems. It also aims to bring the same benefits of
+codification of your system configuration to infrastructure management.
+
+If you are using traditional configuration management within your compute
+instances, you can use OpenRecipe to configure bootstrapping software like
+cloud-init to activate your configuration management software on first
+system boot.
